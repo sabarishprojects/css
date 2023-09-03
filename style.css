@@ -1,0 +1,132 @@
+:root{
+    --white:white;
+    --yellow:rgb(167, 167, 6);
+    --green:green;
+    --red:rgb(208,84,39
+    );
+}
+
+
+
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url(vegetables-set-left-black-slate.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+header a{
+    text-decoration: none;
+    color: var(--yellow);
+
+}
+header{
+    display: flex;
+    padding: 1em;
+    flex-wrap: wrap;
+    row-gap: 1em;
+}
+#logo{
+    flex: 3;
+    font-size: 1.5em
+}
+nav{
+    flex:2; 
+     display: flex; 
+}
+nav a{
+    flex: 1;
+}
+nav a:hover{
+    color: var(--white);
+}
+.maintext{
+    display:flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+.tagline1{
+    color: rgb(208, 84, 39);
+    font-size: 2.5em;
+    font-weight: bold;
+}   
+.tagline2{
+    color:var(--yellow);
+}
+.maintext{
+    margin-top: 1em;
+}
+.maintext button{
+    width: 20vw;
+    margin-top: 1.5em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color:rgb(179, 20, 20);
+    color:black;
+    border: 2px solid var(--yellow);
+}
+.callus{
+    margin-top: .5em;
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    background: linear-gradient(to right,rgb(109, 104, 104),rgb(33, 26, 26));
+    color: aliceblue;
+}
+#menuheading,#locheading{
+    background: linear-gradient(to right,rgb(109, 104, 104),rgb(33, 26, 26));
+    font-size: 2.5em;
+    color: var(--red);
+    display: flex;
+    justify-content: center;
+}
+.menu th{
+    color: aquamarine;
+    font-size: 1.5em;
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.maincourse{
+    grid-row:span 2;
+}
+.locations{
+    background: linear-gradient(to right,rgb(109, 104, 104),rgb(33, 26, 26));
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+.locations h2{
+    color: aquamarine;
+    margin-bottom: .8em;
+}
+.locations div{
+    flex: 1;
+    padding: 1em;
+    min-width: 220px;
+}
+footer{
+    background-color: rgb(87, 84, 84);
+    color: aliceblue;
+    padding: .5em;
+}
